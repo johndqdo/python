@@ -3,15 +3,15 @@ r = input()
 r = float(r)
 while True:
     opcao = input()
-    if opcao == '+':
-        n = input()
-        n = float(n)
-        r += n
-        print(r)
-    elif opcao == 'done':
+    if opcao == 'done':
         quit()
     elif opcao.isdigit():
         r = float(opcao)
+        print(r)
+    elif opcao == '+':
+        n = input()
+        n = float(n)
+        r += n
         print(r)
     elif opcao == '-':
         n = input()
